@@ -39,8 +39,8 @@ const NewTransactions = ({addTransaction}) => {
     return(
         <Box className={classes.container}>
             <Typography variant="h5">New Transaction</Typography>
-            <TextField label="Enter expense" onChange = {(e) => setText(e.target.value)}></TextField>
-            <TextField label="Enter amt" onChange = {(e) => setAmount(e.target.value)}></TextField>
+            <TextField label="Enter expense title" onChange = {(e) => setText(e.target.value)}></TextField>
+            <TextField label="Enter amount(if money spent, put negative sign)" onChange = {(e) => setAmount(e.target.value)}></TextField>
             <Button className={classes.button} onClick={newTransaction} variant="contained">add new transaction</Button>
         </Box>
     )
